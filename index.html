@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Etiqueta meta para que se vea bien en móviles -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Título que se muestra en la pestaña del navegador-->
+    <title>Dulce Arte</title>
+
+    <!-- Vinculamos el archivo CSS externo-->
+     <link rel="stylesheet" href="estilos.css">
+
+</head>
+<body>
+    
+    <!-- 1. Encabezado con logo, menú y banner -->
+     <header>
+        <!--Logotipo-->
+        <div class="logo">
+            <img src="8aa8a378-ddbe-4293-96d5-d86b53920b01.png" alt="Logo featuring a decorated pink and purple cake with heart and macarons on top, surrounded by circular text DulceArte and Dulzura hecha arte in elegant script, conveying a warm and artistic bakery brand identity">
+        </div>
+
+        <!-- Menú de navegación -->
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Productos</a></li>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+      </header>
+
+      <!-- Banner principal -->
+       <section class="banner">
+        <img src="mini-pastissos-amb-toppings.png" alt="Banner principal de Dulce Arte">
+        </section>
+
+    <!-- 2. Slider de productos -->
+     <div class="slider">
+  <!-- Radios para controlar el slider -->
+  <input type="radio" name="slide" id="slide1" checked>
+  <input type="radio" name="slide" id="slide2">
+  <input type="radio" name="slide" id="slide3">
+
+  <!-- Slides -->
+  <div class="slides">
+    <div class="item">
+      <img src="descarga.png" alt="Producto 1">
+      <h3>Cupcakes</h3>
+      <p>$10.000</p>
+    </div>
+    <div class="item">
+      <img src="descarga (2).png" alt="Producto 2">
+      <h3>Mini pastelitos</h3>
+      <p>$30.000</p>
+    </div>
+    <div class="item">
+      <img src="descarga (1).png" alt="Producto 3">
+      <h3>Pasteles</h3>
+      <p>$90.000</p>
+    </div>
+  </div>
+    
+    <!-- Controles de navegación -->
+    <div class="navigation">
+        <label for="slide1" class="bar"></label>
+        <label for="slide2" class="bar"></label>
+        <label for="slide3" class="bar"></label>
+    </div>
+    </div>
+
+
+    <!-- 3. BOTONES DE LLAMADO A LA ACCIÓN -->
+    <section class="acciones">
+        <button>Compra Ahora</button>
+        <button>Ver Producto</button>
+        <button>Ver Oferta</button>
+    </section>
+
+    <!-- 4. FORMULARIO DE CONTACTO -->
+    <section class="contacto">
+        <h2>Contáctanos</h2>
+        <form>
+            <!-- Campo para el nombre -->
+            <input type="text" placeholder="Tu nombre" required>
+            <!-- Campo para el correo -->
+            <input type="email" placeholder="Tu correo" required>
+            <!-- Campo para el mensaje -->
+            <textarea placeholder="Tu mensaje"></textarea>
+            <!-- Botón de envío -->
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+
+</body>
+</html>

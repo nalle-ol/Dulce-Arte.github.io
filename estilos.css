@@ -1,0 +1,164 @@
+/* Style.css *
+
+/* Fuente general, márgenes y colores base */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0; /* Quitamos margenes por defecto */
+    background-color: #ff8ad2; /* Fondo gris claro */
+    color: #333; /* Texto gris oscuro */
+}
+
+/* Encabezado */
+header {
+    display: flex; /* Coloca logo y menú en línea */
+    justify-content: space-between; /* Espacio entre logo y menú */
+    align-items: center; /* centrado verticalmente */
+    background-color: #f15bb8; /* Fondo azul */
+    padding: 10px 20px; /* Espaciado interno */
+    color: white; /* Texto blanco */
+}
+
+
+    /*Logo */
+    .logo img {
+        height: 50px; /* Ajusta el tamaño del logo */
+    }
+    
+    /* Menú */
+nav ul {
+    list-style: none; /* Quita viñetas */
+    display: flex; /* Pone los elementos en línea */
+    margin: 0;
+    padding: 0;
+}
+nav ul li {
+    margin-left: 20px; /* Espacio entre enlaces */
+}
+nav ul li a {
+    color: white; /* Texto blanco */
+    text-decoration: none; /* Sin subrayado */
+    font-weight: bold;
+}
+
+/* Banner */
+.banner img {
+    width: 100%; /* Ocupa todo el ancho */
+    max-height: 300px; /* Limita la altura */
+    height: auto; /* Mantiene proporción */
+}
+
+.slider {
+  width: 400px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  background: white;
+  margin: 20px auto; 
+}
+
+.slides {
+  display: flex;
+  width: 300%;
+  transition: transform 0.5s ease;
+}
+
+.item {
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+}
+
+.item img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+/* Movimiento del slider */
+#slide1:checked ~ .slides {
+  transform: translateX(0);
+}
+#slide2:checked ~ .slides {
+  transform: translateX(-33.3333%);
+}
+#slide3:checked ~ .slides {
+  transform: translateX(-66.6666%);
+}
+
+/* Botones de navegación */
+.navigation {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+}
+
+.bar {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #bbb;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.bar:hover {
+  background: #333;
+}
+
+/* Botones de acción */
+.acciones {
+    text-align: center; /* Centra botones */
+    margin: 20px 0;
+}
+.acciones button {
+    background-color: #d653f0; /* Naranja */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer; /* Mano al pasar el mouse */
+}
+.acciones button:hover {
+    background-color: #d653f0; /* Más oscuro al pasar el mouse */
+}
+
+/* Formulario de contacto */
+.contacto {
+    background: white;
+    padding: 20px;
+    max-width: 400px; /* Ancho limitado */
+    margin: 20px auto; /* Centrado */
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+.contacto h2 {
+    text-align: center;
+}
+.contacto input,
+.contacto textarea {
+    width: 100%; /* Ocupa todo el ancho */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.contacto button {
+    background-color: #b277da;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.contacto button:hover {
+    background-color: #b277da; 
+}
