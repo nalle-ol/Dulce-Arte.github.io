@@ -34,11 +34,14 @@
     <section class="seccion-video" id="acerca">
         <h2>Nuestra Pasión por la Repostería</h2>
         <div class="video-wrapper">
-            <iframe
-                src="https://youtube.com/shorts/NHXur9Fg1QQ?si=nbpTUUbOp8nnPUoq"
-                title="Video de Dulce Arte"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
+            <!-- Reemplaza FULL_VIDEO_URL por la URL completa del video (https://www.tiktok.com/@usuario/video/123...)
+             y TIKTOK_ID por el número después de /video/ -->
+            <blockquote class="tiktok-embed"
+                cite="FULL_VIDEO_URL"
+                data-video-id="TIKTOK_ID"
+                style="max-width:605px;min-width:325px;">
+                <section></section>
+            </blockquote>
         </div>
     </section>
 
@@ -85,15 +88,15 @@
     <!-- Formulario -->
     <section class="contacto" id="contacto">
         <h2>¿Tienes alguna pregunta?</h2>
-        <form action="#" method="post">
-            <label for="nombre" class="visually-hidden">Nombre completo</label>
-            <input id="nombre" type="text" name="nombre" placeholder="Nombre completo" required>
+        <form id="contact-form" action="#" method="post">
+            <label for="nombre" class="visually-hidden">Nombre</label>
+            <input id="nombre" name="nombre" type="text" placeholder="Nombre completo" required>
 
-            <label for="email" class="visually-hidden">Correo electrónico</label>
-            <input id="email" type="email" name="email" placeholder="Correo electrónico" required>
+            <label for="email" class="visually-hidden">Correo</label>
+            <input id="email" name="email" type="email" placeholder="Correo electrónico" required>
 
             <label for="mensaje" class="visually-hidden">Mensaje</label>
-            <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí..." rows="6"></textarea>
+            <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje..." rows="5" required></textarea>
 
             <button type="submit">Enviar Mensaje</button>
         </form>
@@ -118,6 +121,12 @@
             <p>© 2025 Dulce Arte | Todos los derechos reservados</p>
         </div>
     </footer>
+
+    <!-- Al final del body: reemplazar script incorrecto por el script oficial -->
+    <script async src="https://www.tiktok.com/embed.js"></script>
+    
+    <!--Enalace a javascript-->
+    <script src="script.js"></script>
 
 </body>
 </html>
